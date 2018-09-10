@@ -1,0 +1,12 @@
+.cartao-de-cadastro {
+    background-color: white;
+}
+
+.input-field input:focus + label {
+   color: brown  !important;
+ }
+
+.row .input-field input:focus {
+   border-bottom: 1px solid brown   !important;
+   box-shadow: 0 1px 0 0 brown  !important
+ }
