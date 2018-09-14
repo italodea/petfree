@@ -55,3 +55,30 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.cartao-de-cadastro {
+    background-color: white;
+}
+
+.input-field input:focus + label {
+   color: brown  !important;
+ }
+
+.row .input-field input:focus {
+   border-bottom: 1px solid brown   !important;
+   box-shadow: 0 1px 0 0 brown  !important
+ }
+
+#container {
+  padding-left: 300px;
+}
+
+#content {
+  padding: 20px;
+}
+
+@media only screen and (max-width : 992px) {
+  #container {
+    padding-left: 0px;
+  }
+}
