@@ -1,4 +1,7 @@
-DROP DATABASE IF EXISTS PETFREE;
+
+<?php include 'conexao.php';
+$query = 
+"DROP DATABASE IF EXISTS PETFREE;
 
 CREATE DATABASE PETFREE;
 
@@ -35,11 +38,9 @@ CREATE TABLE foto(
     animal INT NOT NULL,
     constraint fk_ANIMAL FOREIGN KEY(animal) REFERENCES animal(id),
     constraint fk_POSTADOR FOREIGN KEY(postador) REFERENCES gerente(id)
-    );
-    
-    
-    
-    
-    
-INSERT INTO animal(nome,caracteristicas) VALUES('gato','sjf sdf ');
-select * from foto;
+    );";
+$query1 = "
+insert into gerente(nome,telefone,email,senha) values('italo','996776026','asdkjsda','qwerty');
+";mysqli_query($con,$query);
+mysqli_query($con,$query1);
+?>

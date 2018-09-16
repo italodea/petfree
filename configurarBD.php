@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS PETFREE;
+"DROP DATABASE IF EXISTS PETFREE;
 
 CREATE DATABASE PETFREE;
 
@@ -35,11 +35,5 @@ CREATE TABLE foto(
     animal INT NOT NULL,
     constraint fk_ANIMAL FOREIGN KEY(animal) REFERENCES animal(id),
     constraint fk_POSTADOR FOREIGN KEY(postador) REFERENCES gerente(id)
-    );
-    
-    
-    
-    
-    
-INSERT INTO animal(nome,caracteristicas) VALUES('gato','sjf sdf ');
-select * from foto;
+    );";
+$query1 = "

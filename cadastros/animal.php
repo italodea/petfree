@@ -35,7 +35,7 @@ try {
 	$query = "INSERT INTO animal(`nome`,`caracteristicas`) VALUES('$nome','$caracteristicas');";
 	$run = mysqli_query($con,$query);
 	//$query = "INSERT INTO foto(`nome`,`caracteristicas`) VALUES('$nome','$caracteristicas');";
-	//header("Location:../gerente.php");
+	header("Location:../gerente.php");
 } catch (Exception $e) {
 	
 }
