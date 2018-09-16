@@ -13,9 +13,9 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
+      <a id="logo-container" href="index.php" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro.html">Galeria de fotos</a></li>
+        <li><a href="cadastro.php">Galeria de fotos</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -34,7 +34,7 @@
           <h5 class="header col s12 light">sistema único do IFRN campus Caicó para pets que precisam de ajuda</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
+          <a href="http://materializecss.com/getting-started.php" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
         </div>
         <br><br>
 

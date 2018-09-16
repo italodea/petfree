@@ -17,9 +17,9 @@
   <!-- BARRA DE NAVEGAÇÃO -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">PetFree</a>
+      <a id="logo-container" href="index.php" class="brand-logo">PetFree</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro.html">Login</a></li>
+        <li><a href="cadastro.php">Login</a></li>
       </ul>
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
