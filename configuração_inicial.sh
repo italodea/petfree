@@ -49,7 +49,6 @@ CREATE TABLE animal(
 CREATE TABLE gerente(
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome varchar(50) NOT NULL,
-    telefone char(11) NOT NULL,
     email varchar(70) NOT NULL,
     senha varchar(50) NOT NULL
     );
@@ -57,7 +56,7 @@ CREATE TABLE gerente(
 CREATE TABLE candidato(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	nome varchar(50),
-	telefone char(11) NOT NULL,
+	telefone char(15) NOT NULL,
 	endereco varchar(70) NOT NULL,
     email varchar(70) NOT NULL,
     animal int NOT NULL,
