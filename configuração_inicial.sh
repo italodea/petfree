@@ -22,9 +22,6 @@ clear
 echo -n "Nome do gerente:";
 read nome_gerente;
 
-echo -n "telefone do gerente (MAX 13 caracteres):";
-read telefone_gerente;
-
 echo -n "email do gerente:";
 read email_gerente;
 
