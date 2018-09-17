@@ -21,18 +21,18 @@
 	    		<center><i class="large material-icons">person</i></center>
 	    		<center><h4 class="card-title">Juarez</h4></center>
 	    		<br>
-	    		<li><a href="gerente.html"><i class="material-icons">home</i>início</a></li>
-	    		<li class="grey lighten-3"><a href="arquivados.html"><i class="material-icons">call_to_action</i>Arquivados</a></li>
-	    		<li><a href="cadastrarpet.html"><i class="material-icons">add</i>Cadastrar pet</a></li>
-	      		<li><a href="cadastrargerente.html"><i class="material-icons">add</i>Cadastrar gerente</a></li>
+	    		<li><a href="gerente.php"><i class="material-icons">home</i>início</a></li>
+	    		<li class="grey lighten-3"><a href="arquivados.php"><i class="material-icons">call_to_action</i>Arquivados</a></li>
+	    		<li><a href="cadastrarpet.php"><i class="material-icons">add</i>Cadastrar pet</a></li>
+	      		<li><a href="cadastrargerente.php"><i class="material-icons">add</i>Cadastrar gerente</a></li>
 	    		<li class="no-padding">
 			        <ul class="collapsible collapsible-accordion">
 			         	<li>
 			            	<a class="collapsible-header">Pets<i class="material-icons">arrow_drop_down</i></a>
 			            	<div class="collapsible-body">
 			             		<ul>
-			                		<li><a href="gatos.html">Gatos</a></li>
-			                		<li><a href="caes.html">Cães</a></li>
+			                		<li><a href="gatos.php">Gatos</a></li>
+			                		<li><a href="caes.php">Cães</a></li>
 			              		</ul>
 			            	</div>
 			          	</li>
@@ -44,7 +44,7 @@
 		<div class="navbar-fixed">
 	  		<nav class="white" role="navigation">
 			    <div class="nav-wrapper container">
-			      <a id="logo-container" href="gerente.html" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
+			      <a id="logo-container" href="gerente.php" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
 			    </div>
 			</nav>
 		</div>

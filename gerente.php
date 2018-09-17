@@ -38,7 +38,7 @@
 			          	</li>
 			        </ul>
 	      		</li>
-	      		<li><a href="#!"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
+	      		<li><a href="index.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
 	    	</ul>
   		</div>
 		<div class="navbar-fixed">
