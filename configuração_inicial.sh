@@ -9,7 +9,7 @@ read usuario;
 echo -n "Senha do usuario do banco Mysql[vazio se não houver]:";
 read -s senha;
 echo
-echo -n "Nome da tabela[recomendado:PETFREE]:";
+echo -n "Nome do banco[recomendado:PETFREE]:";
 read banco;
 
 echo "<?php " '$con' "= mysqli_connect('$IP','$usuario','$senha','$banco');?>" > etc/conexao.php;
@@ -30,13 +30,15 @@ read -s senha_gerente;
 
 
 echo "<?php include 'conexao.php';" >> etc/configurarBD.php
-echo '$query = ' >> etc/configurarBD.php;
-echo '"DROP DATABASE IF EXISTS $banco;
+echo '$query = "' >> etc/configurarBD.php;
+echo "DROP DATABASE IF EXISTS $banco;
 
 CREATE DATABASE $banco;
 
 USE $banco;
+" >> etc/configurarBD.php;
 
+echo '
 CREATE TABLE animal(
     id int AUTO_INCREMENT PRIMARY KEY,
 	nome varchar(50) NOT NULL,        
@@ -70,7 +72,7 @@ CREATE TABLE foto(
     );";' >> etc/configurarBD.php;
 
 echo '$query1 = "' >> etc/configurarBD.php;
-echo "insert into gerente(nome,telefone,email,senha) values('$nome_gerente','$telefone_gerente','$email_gerente','$senha_gerente');" >> etc/configurarBD.php;
+echo "insert into gerente(nome,email,senha) values('$nome_gerente','$email_gerente','$senha_gerente');" >> etc/configurarBD.php;
 echo '";mysqli_query($con,$query);' >> etc/configurarBD.php;
 echo 'mysqli_query($con,$query1);' >> etc/configurarBD.php;
 echo "?>" >> etc/configurarBD.php;
