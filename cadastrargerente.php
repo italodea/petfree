@@ -88,7 +88,7 @@
 							<div class="row">
 						 <div class="modal-footer col s4">
 								<a href="gerente.php" class="modal-close waves-effect btn-flat">Cancelar</a>
-								<input type="submit" value="enviar" class="modal-close waves-effect waves-green btn-flat">
+								<a href="gerente.php" class="waves-effect waves-light btn black">Concluir</a>
 						 </div>
 						</div>
 						 

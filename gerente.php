@@ -97,8 +97,8 @@
 		    </div>
 
 		    <div class="modal-footer">
-		    	<a href="#!" class="modal-close waves-effect waves-green btn-flat">Publicar</a>
-		      	<a href="#!" class="modal-close waves-effect btn-flat">Cancelar</a>
+		    	<a href="gerente.php" class="modal-close waves-effect waves-green btn-flat">Publicar</a>
+		      	<a href="gerente.php" class="modal-close waves-effect btn-flat">Cancelar</a>
 		    </div>
 		 </div>
 
@@ -134,7 +134,7 @@
 				    <div class="col s6 m6">
 				      <div class="card large">
 				        <div class="card-image">
-				          <img src="sample-1.jpg">
+				          <img src="img/sample-1.jpg">
 				          <span class="card-title">Nome do pet</span>
 				          <a class="btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">create</i></a>
 				        </div>
@@ -147,7 +147,7 @@
 				    <div class="col s6 m6">
 				      <div class="card large">
 				        <div class="card-image">
-				          <img src="sample-1.jpg">
+				          <img src="img/sample-1.jpg">
 				          <span class="card-title">Nome do pet</span>
 				          <a class="btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">create</i></a>
 				        </div>

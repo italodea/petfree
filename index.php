@@ -15,7 +15,7 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.php" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro.php">Galeria de fotos</a></li>
+        <li><a href="galeria.php">Galeria de fotos</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -31,16 +31,16 @@
         <br><br>
         <h1 class="header center white-text">PetFree</h1>
         <div class="row center">
-          <h5 class="header col s12 light">sistema único do IFRN campus Caicó para pets que precisam de ajuda</h5>
+          <h5 class="header col s12 light">Sistema único do IFRN campus Caicó para pets que precisam de ajuda</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.php" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
+          <a href="pets.php" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background11.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="img/background11.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background16.jpeg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="img/background16.jpeg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -115,7 +115,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background14.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="img/background14.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer black">
@@ -128,12 +128,9 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Gerente</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="login.php">Login</a></li>
           </ul>
         </div>
         <div class="col l3 s12">

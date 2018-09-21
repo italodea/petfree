@@ -17,10 +17,7 @@
   <!-- BARRA DE NAVEGAÇÃO -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo">PetFree</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro.php">Login</a></li>
-      </ul>
+      <a id="logo-container" href="index.php" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -38,44 +35,31 @@
         <div class="card-content black-text">
           <div class="row">
             <center>
-              <span class="card-title">Cadastro</span>
+              <span class="card-title">Login</span>
             </center>
           </div>
           <form>
               <div class="row">
-                  <div class="input-field col s4 offset-s2">
-                    <input type="text" class="validate">
-                    <label>Nome</label>
-                  </div>
-                  <div class="input-field col s4">
-                    <input type="text" class="datepicker">
-                    <label>Aniversário</label>  
-                  </div>
-              </div>
-              <div class="row">
                 <div class="input-field col s8 offset-s2">
+                  Email:
                   <input id="email" type="email" name="email" class="validate">
-                  <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s8 offset-s2">
+                  Senha:
                   <input id="password" type="password" name="password" class="validate">
-                  <label for="password">Senha</label>
                 </div>
               </div>
+              <center>
               <div class="row">
-                <div class="input-field col s8 offset-s2">
-                  <input id="password" type="password" name="password" class="validate">
-                  <label for="password">Confirmar senha</label>
+                <div>
+                  <a href="gerente.php" class="waves-effect waves-light btn black">Entrar</a>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col offset-s2">
-                  <button class="btn-flat">Cancelar</button>
-                  <button class="waves-effect brown white-text btn-flat" onclick="#">Cadastrar</button><br><br>
-                </div>
-              </div>
+              o</center>
+
+
           </form>
         </div>
       </div>
