@@ -15,7 +15,7 @@ if (mysqli_error($con) == "Duplicate entry '$email' for key 'email'"){
             window.location.href="/cadastrargerente.php"; 
             </script>';
 }else{
-	header("Location:/gerente.php");
+	header("Location:/cadastrargerente.php");
 }
 
 

@@ -34,7 +34,7 @@
           <h5 class="header col s12 light">Sistema único do IFRN campus Caicó para pets que precisam de ajuda</h5>
         </div>
         <div class="row center">
-          <a href="pets.php" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
+          <a href="animais/" id="download-button" class="btn-large waves-effect waves-light black">ver pets</a>
         </div>
         <br><br>
 
