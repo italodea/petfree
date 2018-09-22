@@ -11,6 +11,8 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<?php session_start();
+include 'etc/conexao.php';?>
 <body class="grey lighten-3">
 
 
@@ -19,7 +21,7 @@
 	    	<ul id="slide-out" class="side-nav fixed">
 	    		<br>
 	    		<center><i class="large material-icons">person</i></center>
-	    		<center><h4 class="card-title">Juarez</h4></center>
+	    		<center><h4 class="card-title"><?php echo $_SESSION['nome']; ?></h4></center>
 	    		<br>
 	    		<li class="grey lighten-3"><a href="gerente.php"><i class="material-icons">home</i>início</a></li>
 	    		<li><a href="arquivados.php"><i class="material-icons">call_to_action</i>Arquivados</a></li>
@@ -113,7 +115,12 @@
 			      <div class="card white">
 			        <div class="card-content">
 			          <span class="card-title">Animais em espera</span>
-			          <h1>25</h1>
+			          <h1>
+			          	<?php
+			          		$query = "select id from animal where adotado = 'esperando';";
+			          		$run = mysqli_query($con,$query); 
+			          		echo  mysqli_num_rows($run);
+			          		?></h1>
 			        </div>
 			      </div>
 			    </div>
@@ -122,7 +129,12 @@
 			      <div class="card white">
 			        <div class="card-content">
 			          <span class="card-title">Animais adotados</span>
-			          <h1>7</h1>
+			          <h1>
+			            	<?php
+			          		$query = "select id from animal where adotado != 'esperando';";
+			          		$run = mysqli_query($con,$query); 
+			          		echo  mysqli_num_rows($run);
+			          		?></h1>
 			        </div>
 			      </div>
 			    </div>
@@ -130,7 +142,12 @@
 
 			<h4>Suas publicações</h4>
 
-				<div class="row">
+
+
+
+
+
+<!-- 				<div class="row">
 				    <div class="col s6 m6">
 				      <div class="card large">
 				        <div class="card-image">
@@ -156,7 +173,7 @@
 				        </div>
 				      </div>
 				    </div>
-				</div>
+				</div> -->
 				    
     		
 
