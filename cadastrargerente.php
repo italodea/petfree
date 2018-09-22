@@ -12,12 +12,26 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="grey lighten-3">
+<?php session_start();
+include 'etc/conexao.php';
+
+
+
+if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
+{
+  unset($_SESSION['email']);
+  unset($_SESSION['id']);
+  unset($_SESSION['nome']);
+  header('location:/');
+  }
+
+?>
 	<div id="container">
 		<div id="menu">
 			<ul id="slide-out" class="side-nav fixed">
 				<br>
 				<center><i class="large material-icons">person</i></center>
-				<center><h4 class="card-title">Juarez</h4></center>
+				<center><h4 class="card-title"><?php echo $_SESSION['nome'];?></h4></center>
 				<br>
 				<li><a href="gerente.php"><i class="material-icons">home</i>início</a></li>
 				<li><a href="arquivados.php"><i class="material-icons">call_to_action</i>Arquivados</a></li>
@@ -36,7 +50,7 @@
 									</li>
 							</ul>
 						</li>
-						<li><a href="#!"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
+						<li><a href="/etc/exit.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
 				</ul>
 			</div>
 		<div class="navbar-fixed">

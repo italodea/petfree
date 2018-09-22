@@ -12,7 +12,26 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <?php session_start();
-include 'etc/conexao.php';?>
+include 'etc/conexao.php';
+
+
+
+if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
+{
+  unset($_SESSION['email']);
+  unset($_SESSION['id']);
+  unset($_SESSION['nome']);
+  header('location:/');
+  }
+
+?>
+
+
+
+
+
+
+?>
 <body class="grey lighten-3">
 
 
@@ -40,7 +59,7 @@ include 'etc/conexao.php';?>
 			          	</li>
 			        </ul>
 	      		</li>
-	      		<li><a href="index.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
+	      		<li><a href="/etc/exit.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
 	    	</ul>
   		</div>
 		<div class="navbar-fixed">
@@ -144,37 +163,52 @@ include 'etc/conexao.php';?>
 
 
 
+<?php
 
 
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.postador, foto.animal from animal, foto where animal.id = foto.animal and foto.postador = '".$_SESSION['id']."'; ";
 
-<!-- 				<div class="row">
-				    <div class="col s6 m6">
-				      <div class="card large">
-				        <div class="card-image">
-				          <img src="img/sample-1.jpg">
-				          <span class="card-title">Nome do pet</span>
-				          <a class="btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">create</i></a>
+$run = mysqli_query($con,$query);
+
+while ($row = mysqli_fetch_array($run)) {
+	echo 	"
+
+
+<div class='row'>
+				    <div class='col s6 m6'>
+				      <div class='card large'>
+				        <div class='card-image'>
+				          <img src='/fotos_animais/".$row['nomeArquivo']."'>
+				          <span class='card-title'>".$row['nome']."</span>
+				          <a class='btn-floating halfway-fab waves-effect waves-light black'><i class='material-icons'>create</i></a>
 				        </div>
-				        <div class="card-content">
-				          <p>Aqui serão apresentadas as características do pet em questão.</p>
-				        </div>
-				      </div>
-				    </div>
-
-				    <div class="col s6 m6">
-				      <div class="card large">
-				        <div class="card-image">
-				          <img src="img/sample-1.jpg">
-				          <span class="card-title">Nome do pet</span>
-				          <a class="btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">create</i></a>
-				        </div>
-				        <div class="card-content">
-				          <p>Aqui serão apresentadas as características do pet em questão.</p>
+				        <div class='card-content'>
+				          <p>".$row['caracteristicas']."</p>
 				        </div>
 				      </div>
 				    </div>
-				</div> -->
-				    
+
+
+
+
+
+
+
+
+	";
+}
+
+
+
+
+
+
+
+
+
+
+
+?>				    
     		
 
   		</div>

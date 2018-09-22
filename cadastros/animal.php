@@ -34,9 +34,9 @@ try {
 	$query = "INSERT INTO animal(`nome`,`caracteristicas`,`idade`,`tipo`) VALUES('$nome','$caracteristicas','$tipo_animal','$idade');";
 	$run = mysqli_query($con,$query);
 	$ultimo_animal = mysqli_num_rows(mysqli_query($con,"select id from animal;"));
-	$query = "INSERT INTO foto(nomeArquivo,postador,animal) VALUES($novo_nome_arquivo,".$_SESSION['id'].",$ultimo_animal);";
+	$query = "INSERT INTO foto(nomeArquivo,postador,animal) VALUES('$novo_nome_arquivo','".$_SESSION['id']."','$ultimo_animal');";
 	$run = mysqli_query($con,$query);
-
+	echo "$query";
 	header("Location:../gerente.php");
 } catch (Exception $e) {
 	
