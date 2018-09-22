@@ -25,16 +25,18 @@ echo "path:".$novo_nome_arquivo."<br>";
 
 try {
 	$fazerupload = move_uploaded_file($nome_temporario, $path_de_envio);
-	echo $path_de_envio."<br>";
 	if ($tamanho > 2000000) {
 		echo "O arquivo tem de ter menos de 2MB";
 	}else if(! in_array($extensao,$extensões_permitidas)) {
 		echo "Extensão não suportada apenas arquivos JPEG ou PNG";
 	}
-
-	$query = "INSERT INTO animal(`nome`,`caracteristicas`) VALUES('$nome','$caracteristicas');";
+	session_start();
+	$query = "INSERT INTO animal(`nome`,`caracteristicas`,`idade`,`tipo`) VALUES('$nome','$caracteristicas','$tipo_animal','$idade');";
 	$run = mysqli_query($con,$query);
-	//$query = "INSERT INTO foto(`nome`,`caracteristicas`) VALUES('$nome','$caracteristicas');";
+	$ultimo_animal = mysqli_num_rows(mysqli_query($con,"select id from animal;"));
+	$query = "INSERT INTO foto(nomeArquivo,postador,animal) VALUES($novo_nome_arquivo,".$_SESSION['id'].",$ultimo_animal);";
+	$run = mysqli_query($con,$query);
+
 	header("Location:../gerente.php");
 } catch (Exception $e) {
 	
