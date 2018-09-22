@@ -16,10 +16,9 @@
 	<!-- BARRA DE NAVEGAÇÃO -->
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="index.php" class="brand-logo">PetFree</a>
+			<a id="logo-container" href="/" class="brand-logo">PetFree</a>
 		</div>
 	</nav>
-
 	<br>
 
 	<!-- CARD -->
@@ -46,7 +45,8 @@
         			</div>
       			</div>
       			<div class="row">
-      				<input class="waves-effect waves-teal btn-flat col offset-s8 s2" value="Login" type="submit">
+      				<button class="btn waves-effect waves-light black" type="submit" name="action">Entrar
+								</button>
       			</div>
 					</form>
 				</div>
