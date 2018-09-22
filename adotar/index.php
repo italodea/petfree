@@ -25,7 +25,7 @@
 
 	<br>
 	<div class="row">
-					<form class="col s12 white" method="post" action="cadastros/gerente.php" enctype="multipart/form-data">
+					<form class="col s12 white" method="post" action="enviar_solicitacao.php" enctype="multipart/form-data">
 
 						<h4>Adotar pet</h4>
 						<br>
@@ -34,11 +34,11 @@
 								<br>
 								<div class="input-field col s5  offset-s1">
 									Insira o seu nome:
-									<input placeholder="Adotador" name="primeiro_nome" type="text" class="validate">
+									<input placeholder="Adotador" name="nome" type="text" class="validate">
 								</div>
 								<div class="input-field col s5">
 									Número:
-									<input placeholder="celular/telefone" name="sobrenome" type="text" class="validate">
+									<input placeholder="celular/telefone" name="telefone" type="text" class="validate">
 								</div>
 							</div>
 
@@ -56,7 +56,8 @@
 							<div class="row">
 						 <div class="modal-footer col s4">
 								<a href="pets.php" class="modal-close waves-effect btn-flat">Cancelar</a>
-								<a href="pets.php" class="waves-effect waves-light btn orange lighten-1"><i class="material-icons left">check</i>Concluir</a>
+								<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir
+								</button>
 						 </div>
 						</div>
 						 
