@@ -23,7 +23,4 @@ if (mysqli_num_rows($run) > 0){
             </script>';
     }
 
-
-echo $;
-
 ?>
