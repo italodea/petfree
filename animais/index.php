@@ -35,7 +35,8 @@
 
 include '../etc/conexao.php';
 
-$query = "select * from animal;";
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.animal from animal, foto where animal.id = foto.animal;";
+
 $run = mysqli_query($con,$query);
 
 while ($row = mysqli_fetch_array($run)){
@@ -43,7 +44,7 @@ while ($row = mysqli_fetch_array($run)){
     <div class='col s6 m5'>
       <div class='card medium'>
         <div class='card-image'>
-          <img src='/img/sample-1.jpg'>
+          <img src='/fotos_animais/".$row['nomeArquivo']."'>
         </div>
         <div class='card-content'>
            <span class='card-title activator grey-text text-darken-4'>".$row['nome']."<i class='material-icons right'>keyboard_arrow_up</i></span>

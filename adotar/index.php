@@ -25,7 +25,7 @@
 
 	<br>
 	<div class="row">
-					<form class="col s12 white" method="post" action="enviar_solicitacao.php" enctype="multipart/form-data">
+					<form class="col s12 white" method="post" action=<?php echo "'enviar_solicitacao.php?id=".$_GET['id']."'";?> enctype="multipart/form-data">
 
 						<h4>Adotar pet</h4>
 						<br>
