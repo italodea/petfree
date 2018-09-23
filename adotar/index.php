@@ -14,7 +14,7 @@
 
 	<nav class="white" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="pets.php" class="brand-logo"><i class="material-icons">arrow_back</i>PetFree</a>
+				<a id="logo-container" href="../animais/index.php" class="brand-logo"><i class="material-icons">arrow_back</i>PetFree</a>
 
 				<ul id="nav-mobile" class="sidenav">
 					<li><a href="#">Navbar Link</a></li>
@@ -55,7 +55,7 @@
 
 							<div class="row">
 						 <div class="modal-footer col s4">
-								<a href="pets.php" class="modal-close waves-effect btn-flat">Cancelar</a>
+								<a href="../animais/index.php" class="modal-close waves-effect btn-flat">Cancelar</a>
 								<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir
 								</button>
 						 </div>

@@ -28,7 +28,7 @@
 				<div class="card-content black-text">
 					<div class="row">
 						<center>
-							<span class="card-title">Cadastro</span>
+							<span class="card-title">Login</span>
 						</center>
 					</div>
 					<form method="post" action="/login/logar.php">
