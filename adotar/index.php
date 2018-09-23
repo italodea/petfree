@@ -14,7 +14,7 @@
 
 	<nav class="white" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="../animais/index.php" class="brand-logo"><i class="material-icons">arrow_back</i>PetFree</a>
+				<a id="logo-container" href="../animais" class="brand-logo"><i class="material-icons">arrow_back</i>PetFree</a>
 
 				<ul id="nav-mobile" class="sidenav">
 					<li><a href="#">Navbar Link</a></li>
@@ -48,7 +48,7 @@
 								</div>
 							
 								<div class="col s5">
-									Insira o endereço de email:
+									Endereço de email:
 									<div class="input-field inline">
 										<input id="email_inline" type="email" class="validate" name="email">
 										<label for="email_inline">Email</label>

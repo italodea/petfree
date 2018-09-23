@@ -39,20 +39,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
           <li class="grey lighten-3"><a href="solicitacoes.php"><i class="material-icons">drafts</i>Solicitações</a></li>
           <li><a href="cadastrarpet.php"><i class="material-icons">add</i>Cadastrar pet</a></li>
           <li><a href="cadastrargerente.php"><i class="material-icons">add</i>Cadastrar gerente</a></li>
-          <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                    <a class="collapsible-header">Pets<i class="material-icons">arrow_drop_down</i></a>
-                    <div class="collapsible-body">
-                      <ul>
-                          <li><a href="gatos.php">Gatos</a></li>
-                          <li><a href="caes.php">Cães</a></li>
-                        </ul>
-                    </div>
-                  </li>
-              </ul>
-            </li>
-            <li><a href="/etc/exit.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
+          <li><a href="/etc/exit.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
         </ul>
       </div>
     <div class="navbar-fixed">
@@ -88,7 +75,7 @@ while ($row = mysqli_fetch_array($run)) {
             <div class='card'>
               <div class='card-content'>
                 <span class='card-title'>".$row['nome']."</span>
-                <p>Endereço:".$row['endereco']".</p>
+                <p>Endereço:".$row['endereco']."</p>
                 <p>Contato:".$row['telefone']."</p>
                 <p>Email:".$row['email']."</p>
                 <p>Animal:".$run1['nome']."</p>
