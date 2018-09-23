@@ -39,7 +39,7 @@
 			          	</li>
 			        </ul>
 	      		</li>
-	      		<li><a href="#!"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
+	      		<li><a href="/etc/exit.php"><i class="material-icons red-text">exit_to_app</i>Sair</a></li>
 	    	</ul>
   		</div>
 		<div class="navbar-fixed">
@@ -56,6 +56,16 @@
     		<a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
 
     		<h4>Cães cadastrados</h4>
+
+    		<div class="card col s6 m5">
+			    <div class="card-content">
+			      <span class="card-title activator grey-text text-darken-4">@cão<i class="material-icons right">more_vert</i></span>
+			    </div>
+			    <div class="card-reveal">
+			      <span class="card-title grey-text text-darken-4">@cão<i class="material-icons right">close</i></span>
+			      <p>Características:</p>
+			    </div>
+			 </div>
     	</div>
     </div>
 

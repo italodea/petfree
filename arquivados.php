@@ -69,6 +69,12 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
     		<a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
 
     		<h4>Pets arquivados</h4>
+
+    		<div class="card col s6 m5">
+			    <div class="card-content">
+			      <span class="card-title activator grey-text text-darken-4">@pet</span>
+			    </div>
+			 </div>
     	</div>
     </div>
 

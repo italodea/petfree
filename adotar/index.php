@@ -37,13 +37,17 @@
 									<input placeholder="Adotador" name="nome" type="text" class="validate">
 								</div>
 								<div class="input-field col s5">
+									Endereço:
+									<input placeholder="rua, número, bairro, cidade" name="nome" type="text" class="validate">
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s5 offset-s1">
 									Número:
 									<input placeholder="celular/telefone" name="telefone" type="text" class="validate">
 								</div>
-							</div>
-
-							<div class="row">
-								<div class="col s5 offset-s1">
+							
+								<div class="col s5">
 									Insira o endereço de email:
 									<div class="input-field inline">
 										<input id="email_inline" type="email" class="validate" name="email">
