@@ -52,9 +52,8 @@ while ($row = mysqli_fetch_array($run)){
 
         <div class='card-reveal'>
           <span class='card-title grey-text text-darken-4'>Informações sobre ".$row['nome']."<i class='material-icons right'>close</i></span>
-           <p>Nome:".$row['nome']."</p>
-           <p>Características:</p>
-           <p>".$row['caracteristicas']."</p>
+           <p><b>Nome: </b>".$row['nome']."</p>
+           <p><b>Características: </b>".$row['caracteristicas']."</p>
         </div>
         <div class='card-action'>
           <a href='../adotar/?id=".$row['id']."'><i class='material-icons'>pets</i> adotar</a>

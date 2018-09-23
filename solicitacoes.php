@@ -75,10 +75,10 @@ while ($row = mysqli_fetch_array($run)) {
             <div class='card'>
               <div class='card-content'>
                 <span class='card-title'>".$row['nome']."</span>
-                <p>Endereço:".$row['endereco']."</p>
-                <p>Contato:".$row['telefone']."</p>
-                <p>Email:".$row['email']."</p>
-                <p>Animal:".$run1['nome']."</p>
+                <p><b>Endereço: </b>".$row['endereco']."</p>
+                <p><b>Contato: </b>".$row['telefone']."</p>
+                <p><b>Email: </b>".$row['email']."</p>
+                <p><b>Animal: </b>".$run1['nome']."</p>
               </div>
               <div class='card-action'>
                 <a href='solicitacoes/processar.php?id=".$row['id']."&acao=0' class='btn white black-text'>Recusar</a>

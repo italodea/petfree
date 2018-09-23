@@ -108,7 +108,7 @@ while ($row = mysqli_fetch_array($run)) {
 				      <div class='card large'>
 				        <div class='card-image'>
 				          <img src='/fotos_animais/".$row['nomeArquivo']."'>
-				          <span class='card-title'>".$row['nome']."</span>
+				          <span class='card-title black-text'>".$row['nome']."</span>
 				          <a class='btn-floating halfway-fab waves-effect waves-light black'><i class='material-icons'>create</i></a>
 				        </div>
 				        <div class='card-content'>
