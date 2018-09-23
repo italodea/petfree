@@ -88,7 +88,7 @@ while ($row = mysqli_fetch_array($run)) {
             <div class='card'>
               <div class='card-content'>
                 <span class='card-title'>".$row['nome']."</span>
-                <p>Endereço:".$row['endereco']".<p>
+                <p>Endereço:".$row['endereco']".</p>
                 <p>Contato:".$row['telefone']."</p>
                 <p>Email:".$row['email']."</p>
                 <p>Animal:".$run1['nome']."</p>
