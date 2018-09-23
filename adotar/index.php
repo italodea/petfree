@@ -38,7 +38,7 @@
 								</div>
 								<div class="input-field col s5">
 									Endereço:
-									<input placeholder="rua, número, bairro, cidade" name="nome" type="text" class="validate">
+									<input placeholder="rua, número, bairro, cidade" name="endereco" type="text" class="validate">
 								</div>
 							</div>
 							<div class="row">
