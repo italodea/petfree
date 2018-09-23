@@ -35,6 +35,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 				<br>
 				<li><a href="gerente.php"><i class="material-icons">home</i>início</a></li>
 				<li><a href="arquivados.php"><i class="material-icons">call_to_action</i>Arquivados</a></li>
+				<li><a href="solicitacoes.php"><i class="material-icons">drafts</i>Solicitações</a></li>
 				<li><a href="cadastrarpet.php"><i class="material-icons">add</i>Cadastrar pet</a></li>
 				<li class="grey lighten-3"><a href="cadastargerente.php"><i class="material-icons">add</i>Cadastrar gerente</a></li>
 				<li class="no-padding">

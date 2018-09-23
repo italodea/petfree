@@ -55,9 +55,8 @@
 
 							<div class="row">
 						 <div class="modal-footer col s4">
-								<a href="../animais/index.php" class="modal-close waves-effect btn-flat">Cancelar</a>
-								<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir
-								</button>
+								<a href="../animais" class="modal-close waves-effect btn-flat">Cancelar</a>
+								<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir</button>
 						 </div>
 						</div>
 						 
