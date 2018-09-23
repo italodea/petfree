@@ -35,7 +35,7 @@
 
 include '../etc/conexao.php';
 
-$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.animal from animal, foto where animal.id = foto.animal;";
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.animal from animal, foto where animal.id = foto.animal and animal.adotado = 'esperando';";
 
 $run = mysqli_query($con,$query);
 

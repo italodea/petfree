@@ -22,7 +22,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
   unset($_SESSION['email']);
   unset($_SESSION['id']);
   unset($_SESSION['nome']);
-  header('location:/');
+  header('location:index.php');
   }
 
 ?>
@@ -70,22 +70,44 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 
         <h4>Interessados em adoção</h4>
 
-        <div class="row">
-          <div class="col s6 m5">
-            <div class="card">
-              <div class="card-content">
-                <span class="card-title">Nome do usuário</span>
-                <p>Contato:</p>
-                <p>Email:</p>
-                <p>Animal:</p>
+<?php
+
+
+include 'etc/conexao.php';
+$query = "select * from candidato where estado='esperando';";
+
+$run = mysqli_query($con,$query);
+while ($row = mysqli_fetch_array($run)) {
+  $query1 = "select animal.nome from animal where animal.id ='".$row['animal']."';";
+  $run1 = mysqli_fetch_array(mysqli_query($con,$query1));
+  echo "
+
+
+<div class='row'>
+          <div class='col s6 m5'>
+            <div class='card'>
+              <div class='card-content'>
+                <span class='card-title'>".$row['nome']."</span>
+                <p>Contato:".$row['telefone']."</p>
+                <p>Email:".$row['email']."</p>
+                <p>Animal:".$run1['nome']."</p>
               </div>
-              <div class="card-action">
-                <button class="btn white black-text" type="submit" name="action">Recusar</button>
-                <button class="btn black" type="submit" name="action">Aceitar</button>
+              <div class='card-action'>
+                <a href='solicitacoes/processar.php?id=".$row['id']."&acao=0' class='btn white black-text'>Recusar</a>
+                <a href='solicitacoes/processar.php?id=".$row['id']."&acao=1&animal=".$row['animal']."' class='btn black'>Aceitar</a>
               </div>
             </div>
           </div>
         </div>
+
+"
+  ;
+}
+
+
+
+
+?>
 
     </div>
 

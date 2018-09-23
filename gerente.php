@@ -108,7 +108,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 <?php
 
 
-$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.postador, foto.animal from animal, foto where animal.id = foto.animal and foto.postador = '".$_SESSION['id']."'; ";
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.postador, foto.animal from animal, foto where animal.id = foto.animal and foto.postador = '".$_SESSION['id']."' and animal.adotado = 'esperando'; ";
 
 $run = mysqli_query($con,$query);
 
