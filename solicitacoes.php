@@ -36,8 +36,8 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
           <br>
           <li><a href="gerente.php"><i class="material-icons">home</i>início</a></li>
           <li><a href="arquivados.php"><i class="material-icons">call_to_action</i>Arquivados</a></li>
-          <li><a href="solicitacoes.php"><i class="material-icons">drafts</i>Solicitações</a></li>
-          <li class="grey lighten-3"><a href="cadastrarpet.php"><i class="material-icons">add</i>Cadastrar pet</a></li>
+          <li class="grey lighten-3"><a href="solicitacoes.php"><i class="material-icons">drafts</i>Solicitações</a></li>
+          <li><a href="cadastrarpet.php"><i class="material-icons">add</i>Cadastrar pet</a></li>
           <li><a href="cadastrargerente.php"><i class="material-icons">add</i>Cadastrar gerente</a></li>
           <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
@@ -68,67 +68,28 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 
         <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
 
+        <h4>Interessados em adoção</h4>
+
         <div class="row">
-          <form class="col s12 white" method="post" action="cadastros/animal.php" enctype="multipart/form-data">
-
-            <h4>Cadastro de Pet</h4>
-            <br>
-
-            <div class="row">
-              <br>
-              <div class="input-field col s5  offset-s1">
-                <input placeholder="insira o nome do pet" name="nome" type="text" class="validate">
-                <label for="first_name">Nome</label>
+          <div class="col s6 m5">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Nome do usuário</span>
+                <p>Contato:</p>
+                <p>Email:</p>
+                <p>Animal:</p>
               </div>
-              <div class="input-field col s5">
-                <input placeholder="Quantos anos tem o pet? (aprox.)" type="number" class="validate" name="idade">
-                <label>Idade</label>
+              <div class="card-action">
+                <button class="btn white black-text" type="submit" name="action">Recusar</button>
+                <button class="btn black" type="submit" name="action">Aceitar</button>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s10 offset-s1">
-                <textarea name="caracteristicas" class="materialize-textarea" maxlength="120"></textarea>
-                <label for="textarea1">Descreva as características do pet</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s10 offset-s1">
-              <select class="browser-default" name="tipo">
-                <option value="" disabled selected>Tipo do pet:</option>
-                <option value="gato">Gato</option>
-                <option value="cao">Cão</option>
-              </select>
             </div>
           </div>
-
-            <div class="row">
-            <div class="file-field input-field col s10 offset-s1">
-              <div class="btn black">
-                <span>Imagem</span>
-                <input type="file" name="foto" required>
-              </div>
-              <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Faça o upload de uma ou mais fotos">
-              </div>
-            </div>
-           </div>
-           <div class="row">
-             <div class="modal-footer col s4">
-                <a href="gerente.php" class="modal-close waves-effect btn-flat">Cancelar</a>
-                <button class="btn waves-effect waves-light black" type="submit" name="action">Concluir
-                </button>
-             </div>
-          </div>
-          </form>
         </div>
 
-      </div>
-    
-  </div>
+    </div>
 
-   <!--  Scripts-->
+        <!--  Scripts-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="js/materialize.js"></script>
    

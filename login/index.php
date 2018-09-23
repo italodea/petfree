@@ -16,7 +16,7 @@
 	<!-- BARRA DE NAVEGAÇÃO -->
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="/" class="brand-logo">PetFree</a>
+			<a id="logo-container" href="../" class="brand-logo"><i class="material-icons">arrow_back</i>PetFree</a>
 		</div>
 	</nav>
 	<br>
@@ -45,8 +45,9 @@
         			</div>
       			</div>
       			<div class="row">
-      				<button class="btn waves-effect waves-light black" type="submit" name="action">Entrar
-								</button>
+      				<center>
+      				<button class="btn waves-effect waves-light black" type="submit" name="action">Entrar</button>
+      				</center>
       			</div>
 					</form>
 				</div>

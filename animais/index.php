@@ -41,7 +41,7 @@ $run = mysqli_query($con,$query);
 
 while ($row = mysqli_fetch_array($run)){
   echo "<div class='row'>
-    <div class='col s6 m5'>
+    <div class='col s6 m5 offset-s3'>
       <div class='card medium'>
         <div class='card-image'>
           <img src='/fotos_animais/".$row['nomeArquivo']."'>

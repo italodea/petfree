@@ -65,59 +65,6 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 			</nav>
 		</div>
 
-		<div class="fixed-action-btn horizontal click-to-toggle">
-		  <a class="btn-floating btn-large black" href="#modal-criar-publicacao">
-		    <i class="material-icons">add_a_photo</i>
-		  </a>
-		</div>
-
-		<!-- Modal para criar publicação -->
-		<div id="modal-criar-publicacao" class="modal">
-		    <div class="modal-content">
-
-		      <h4>Criar nova publicação</h4>
-
-		      <div class="row">
-
-			    <form class="col s12">
-			      <div class="row">
-			        <div class="input-field col s12">
-			          <textarea id="textarea1" class="materialize-textarea"></textarea>
-			          <label for="textarea1">Título</label>
-			        </div>
-			      </div>
-			    </form>
-
-			    <form class="col s12">
-			      <div class="row">
-			        <div class="input-field col s12">
-			          <textarea id="textarea1" class="materialize-textarea"></textarea>
-			          <label for="textarea1">Escreva alguma coisa sobre o pet</label>
-			        </div>
-			      </div>
-			    </form>
-			 </div>
-
-			 <form action="#">
-			    <div class="file-field input-field">
-			      <div class="btn black">
-			        <span>Imagem</span>
-			        <input type="file" multiple>
-			      </div>
-			      <div class="file-path-wrapper">
-			        <input class="file-path validate" type="text" placeholder="Faça o upload de uma ou mais fotos">
-			      </div>
-			    </div>
-			 </form>
-
-		    </div>
-
-		    <div class="modal-footer">
-		    	<a href="gerente.php" class="modal-close waves-effect waves-green btn-flat">Publicar</a>
-		      	<a href="gerente.php" class="modal-close waves-effect btn-flat">Cancelar</a>
-		    </div>
-		 </div>
-
   		<div id="content" class="grey lighten-3">
 
     		<a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
@@ -154,7 +101,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 			    </div>
 			</div>
 
-			<h4>Suas publicações</h4>
+			<h4>Meus cadastros</h4>
 
 
 

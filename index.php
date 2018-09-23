@@ -13,11 +13,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="galeria.php">Galeria de fotos</a></li>
-      </ul>
-
+      <a id="logo-container" href="../" class="brand-logo"><i class="material-icons">pets</i>PetFree</a>
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -130,7 +126,7 @@
         <div class="col l3 s12">
           <h5 class="white-text">Gerente</h5>
           <ul>
-            <li><a class="white-text" href="login.php">Login</a></li>
+            <li><a class="white-text" href="login/">Login</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
