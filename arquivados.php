@@ -70,11 +70,22 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 
     		<h4>Pets arquivados</h4>
 
-    		<div class="card col s6 m5">
-			    <div class="card-content">
-			      <span class="card-title activator grey-text text-darken-4">@pet</span>
-			    </div>
-			 </div>
+<?php
+
+
+include 'etc/conexao.php';
+$query = "select nome from animal where animal.adotado != 'esperando';";
+$run = mysqli_query($con,$query);
+while ($row = mysqli_fetch_array($run)) {
+echo "<div class='card col s6 m5'>
+	    <div class='card-content'>
+		    <span class='card-title activator grey-text text-darken-4'>".$row['nome']."</span>
+		</div>
+	</div>
+
+";
+}
+?>
     	</div>
     </div>
 
