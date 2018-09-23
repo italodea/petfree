@@ -7,8 +7,8 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="grey lighten-3">
 
@@ -44,7 +44,7 @@ while ($row = mysqli_fetch_array($run)){
     <div class='col s6 m5'>
       <div class='card medium'>
         <div class='card-image'>
-          <img src='/fotos_animais/".$row['nomeArquivo']."'>
+          <img src='../fotos_animais/".$row['nomeArquivo']."'>
         </div>
         <div class='card-content'>
            <span class='card-title activator grey-text text-darken-4'>".$row['nome']."<i class='material-icons right'>keyboard_arrow_up</i></span>
@@ -57,7 +57,7 @@ while ($row = mysqli_fetch_array($run)){
            <p>".$row['caracteristicas']."</p>
         </div>
         <div class='card-action'>
-          <a href='/adotar/?id=".$row['id']."'><i class='material-icons'>pets</i> adotar</a>
+          <a href='../adotar/?id=".$row['id']."'><i class='material-icons'>pets</i> adotar</a>
         </div>
       </div>
     </div>
@@ -75,8 +75,8 @@ while ($row = mysqli_fetch_array($run)){
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="/js/materialize.js"></script>
-  <script src="/js/init.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
 
   </body>
 </html>

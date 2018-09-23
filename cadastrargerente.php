@@ -22,7 +22,7 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
   unset($_SESSION['email']);
   unset($_SESSION['id']);
   unset($_SESSION['nome']);
-  header('location:/');
+  header('location:index.php');
   }
 
 ?>

@@ -12,10 +12,10 @@ $run = mysqli_query($con,$query);
 if (mysqli_error($con) == "Duplicate entry '$email' for key 'email'"){
 	echo '<script> 
             alert("Atenção: este email já está sendo utilizado!");
-            window.location.href="/cadastrargerente.php"; 
+            window.location.href="../cadastrargerente.php"; 
             </script>';
 }else{
-	header("Location:/cadastrargerente.php");
+	header("Location:../cadastrargerente.php");
 }
 
 

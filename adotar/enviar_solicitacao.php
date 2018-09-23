@@ -8,5 +8,5 @@ $email = $_POST['email'];
 $query = "insert into candidato(nome,telefone,email,animal) values('$nome','$telefone','$email','$id');";
 
 $run=mysqli_query($con,$query);
-header("location:/animais");
+header("location:../animais");
 ?>
