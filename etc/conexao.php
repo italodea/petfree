@@ -1,1 +1,1 @@
-<?php  $con = mysqli_connect('arioliveira.com','ariolive_ifrn18','ariolive_ifrn18','ariolive_t2g2');?>
+<?php  $con = mysqli_connect("sql9.freemysqlhosting.net","sql9271855","WwVkItsrev","sql9271855");?>
