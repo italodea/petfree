@@ -42,10 +42,9 @@ $path_de_envio = $local_salvamento . basename($novo_nome_arquivo);
 echo "extensao:".$extensao."<br>";
 echo "nametmp:".$nome_temporario."<br>";
 echo "nome do arquivo:".$novo_nome_arquivo."<br>";
-
 echo "path:".$path_de_envio."<br>";
 
-try {
+/*try {
 	if ($tamanho > 2000000) {
 		echo "O arquivo tem de ter menos de 2MB";
 		//header("Location:../");
@@ -67,6 +66,6 @@ LIMIT 1;"));
 } catch (Exception $e) {
 	
 }
-
+*/
 
 ?>
