@@ -21,13 +21,29 @@ $tamanho = $_FILES['foto']['size'];
 
 $tmp = explode('.', $nome_arquivo);
 $extensao =  end($tmp);
+$barrinha = explode(" ", "\ ");
 
-$tmp1 = explode('/', $nome_temporario);
+
+/*
+
+Aviso: Desfaça o comentário da variavel $tmp1 que corresponde ao SO
+do servidor em que o software está sendo executado;
+
+*/
+
+$tmp1 = explode('/', $nome_temporario);//linux ou mac
+//$tmp1 = explode($barrinha[0], $nome_temporario);//windows
+
+
+
+var_dump($tmp1);
 $novo_nome_arquivo = end($tmp1) . ".$extensao";
 $path_de_envio = $local_salvamento . basename($novo_nome_arquivo);
 echo "extensao:".$extensao."<br>";
 echo "nametmp:".$nome_temporario."<br>";
-echo "path:".$novo_nome_arquivo."<br>";
+echo "nome do arquivo:".$novo_nome_arquivo."<br>";
+
+echo "path:".$path_de_envio."<br>";
 
 try {
 	if ($tamanho > 2000000) {
