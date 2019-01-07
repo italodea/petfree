@@ -25,44 +25,33 @@
 
 	<br>
 	<div class="row">
-					<form class="col s12 white" method="post" action=<?php echo "'enviar_solicitacao.php?id=".$_GET['id']."'";?> enctype="multipart/form-data">
-
-						<h4>Adotar pet</h4>
-						<br>
-
-							<div class="row">
-								<br>
-								<div class="input-field col s5  offset-s1">
-									Insira o seu nome:
-									<input placeholder="Adotador" name="nome" type="text" class="validate">
-								</div>
-								<div class="input-field col s5">
-									Endereço:
-									<input placeholder="rua, número, bairro, cidade" name="endereco" type="text" class="validate">
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s5 offset-s1">
-									Número:
-									<input placeholder="celular/telefone" name="telefone" type="text" class="validate">
-								</div>
-							
-								<div class="col s5">
-									Endereço de email:
-									<div class="input-field inline">
-										<input id="email_inline" type="email" class="validate" name="email">
-										<label for="email_inline">Email</label>
-										<span class="helper-text" data-error="formato inválido" data-success="certo">exemplo@email.com</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-						 <div class="modal-footer col s4">
-								<a href="../animais" class="modal-close waves-effect btn-flat">Cancelar</a>
-								<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir</button>
-						 </div>
-						</div>
+		<form class="col s12 m6 offset-m3 white" method="post" action=<?php echo "'enviar_solicitacao.php?id=".$_GET['id']."'";?> enctype="multipart/form-data">
+			<h4>Adotar pet</h4><br>
+			<div class="row"><br>
+				<div class="input-field col s12 m10 offset-m1">
+					<label>Insira o seu nome:</label>
+					<input placeholder="Adotador" name="nome" type="text" class="validate">
+				</div>
+				<div class="input-field col s12 m10 offset-m1">
+					<label>Endereço:</label>
+					<input placeholder="rua, número, bairro, cidade" name="endereco" type="text" class="validate">
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12 m10 offset-m1">
+					<label>Número:</label>
+					<input placeholder="celular/telefone" name="telefone" type="text" class="validate">
+				</div>
+				<div class="input-field col s12 m10 offset-m1">
+					<label>Endereço de email:</label>
+					<input id="email_inline" type="email" class="validate" name="email">
+				</div>
+			</div>
+			
+			<div class="row">
+				<a href="../animais" class="modal-close waves-effect btn-flat">Cancelar</a>
+				<button class="btn waves-effect waves-light black" type="submit" name="action">Concluir</button>
+			</div>
 						 
 					</form>
 				</div>
