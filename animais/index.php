@@ -35,35 +35,51 @@
 
 include '../etc/conexao.php';
 
-$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.animal from animal, foto where animal.id = foto.animal and animal.adotado = 'esperando';";
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas,animal.idade,animal.tipo, foto.nomeArquivo, foto.animal from animal, foto where animal.id = foto.animal and animal.adotado = 'esperando';";
 
 $run = mysqli_query($con,$query);
 
+
 while ($row = mysqli_fetch_array($run)){
-  echo "<div class='row'>
-    <div class='col s6 m5 offset-s3'>
+  ?><div class='row'>
+    <div class='col s12 m6 '>
       <div class='card medium'>
         <div class='card-image'>
-          <img src='../fotos_animais/".$row['nomeArquivo']."'>
+          <!--<img src='/fotos_animais/".$row['nomeArquivo']."'>-->
+					<img src='<?php echo $row['nomeArquivo'];?>'>
         </div>
         <div class='card-content'>
-           <span class='card-title activator grey-text text-darken-4'>".$row['nome']."<i class='material-icons right'>keyboard_arrow_up</i></span>
+           <span class='card-title activator grey-text text-darken-4'><?php echo $row['nome'];?><i class='material-icons right'>keyboard_arrow_up</i></span>
         </div>
 
         <div class='card-reveal'>
-          <span class='card-title grey-text text-darken-4'>Informações sobre ".$row['nome']."<i class='material-icons right'>close</i></span>
-           <p><b>Nome: </b>".$row['nome']."</p>
-           <p><b>Características: </b>".$row['caracteristicas']."</p>
+        <span class='card-title grey-text text-darken-4'>Informações sobre <?php echo $row['nome'];?><i class='material-icons right'>close</i></span>
+        <table class="striped">
+        <tbody>
+          <tr>
+            <td>Descrição:</td>
+            <td><?php echo $row['caracteristicas'];?></td>
+          </tr>
+          <tr>
+            <td>Idade</td>
+            <td><?php echo $row['idade'];?> ano(s)</td>
+          </tr>
+          <tr>
+            <td>Tipo</td>
+            <td><?php echo $row['tipo'];?></td>
+          </tr>
+        </tbody>
+      </table>
         </div>
         <div class='card-action'>
-          <a href='../adotar/?id=".$row['id']."'><i class='material-icons'>pets</i> adotar</a>
+          <a href='../adotar/?id=<?php echo $row['id'];?>'><i class='material-icons'>pets</i> adotar</a>
         </div>
       </div>
-    </div>
-  </div>";
-      
-}
-?>
+    </div>  
+  <?php   
+  }
+  ?>
+
 
 
 
