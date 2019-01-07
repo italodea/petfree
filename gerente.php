@@ -6,9 +6,8 @@
   <title>Início</title>
 
   <!-- CSS  -->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <?php session_start();
@@ -95,48 +94,46 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
 <?php
 
 
-$query = "SELECT animal.id, animal.nome, animal.caracteristicas, foto.nomeArquivo, foto.postador, foto.animal from animal, foto where animal.id = foto.animal and foto.postador = '".$_SESSION['id']."' and animal.adotado = 'esperando'; ";
+$query = "SELECT animal.id, animal.nome, animal.caracteristicas, animal.tipo, animal.idade, foto.nomeArquivo, foto.postador, foto.animal from animal, foto where animal.id = foto.animal and foto.postador = '".$_SESSION['id']."' and animal.adotado = 'esperando'; ";
 
 $run = mysqli_query($con,$query);
 
 while ($row = mysqli_fetch_array($run)) {
-	echo 	"
+	?>
 
 
 <div class='row'>
-				    <div class='col s6 m6'>
+				    <div class='col s12 m6'>
 				      <div class='card large'>
 				        <div class='card-image'>
-				          <img src='/fotos_animais/".$row['nomeArquivo']."'>
-				          <span class='card-title black-text'>".$row['nome']."</span>
-				          <a class='btn-floating halfway-fab waves-effect waves-light black'><i class='material-icons'>create</i></a>
+									<!--<img src='/fotos_animais/".$row['nomeArquivo']."'>-->
+									<img src='<?php echo $row['nomeArquivo'];?>'>
+				          <span class='card-title black-text'><?php echo $row['nome'];?></span>
 				        </div>
-				        <div class='card-content'>
-				          <p>".$row['caracteristicas']."</p>
-				        </div>
+							
+									<table class="striped">
+										<tbody>
+											<tr>
+												<td>Descrição:</td>
+												<td><?php echo $row['caracteristicas'];?></td>
+											</tr>
+											<tr>
+												<td>Idade</td>
+												<td><?php echo $row['idade'];?> ano(s)</td>
+											</tr>
+											<tr>
+												<td>Tipo</td>
+												<td><?php echo $row['tipo'];?></td>
+											</tr>
+										</tbody>
+									</table>
+            
+				        
 				      </div>
 				    </div>
 
-
-
-
-
-
-
-
-	";
+<?php
 }
-
-
-
-
-
-
-
-
-
-
-
 ?>				    
     		
 
