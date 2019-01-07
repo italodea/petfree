@@ -6,9 +6,8 @@
 
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css' rel='stylesheet'>
 	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="../css/design.css" type="text/css" rel="stylesheet"  media="screen,projection"/>
 </head>
 
 <!-- CONTEÚDO -->
@@ -20,7 +19,7 @@
 		</div>
 	</nav>
 	<br>
-
+	<h4> para fins de teste o email é italo@email.com e senha é qwerty</h4>
 	<!-- CARD -->
 	<div class="row">
 		<div class="col s12 m8 offset-m2 xl6 offset-xl3">
