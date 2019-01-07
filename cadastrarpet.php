@@ -6,9 +6,8 @@
   <title>Início</title>
 
   <!-- CSS  -->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="grey lighten-3">
@@ -90,17 +89,12 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['id']) == true))
             </div>
           </div>
 
-            <div class="row">
-            <div class="file-field input-field col s10 offset-s1">
-              <div class="btn black">
-                <span>Imagem</span>
-                <input type="file" name="foto" required>
+          <div class="row">
+              <div class="input-field col s10 offset-s1">
+                <textarea name="imagem" class="materialize-textarea"></textarea>
+                <label for="textarea1">Link da foto</label>
               </div>
-              <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Faça o upload de uma ou mais fotos">
-              </div>
-            </div>
-           </div>
+          </div>
            <div class="row">
              <div class="modal-footer col s4">
                 <a href="gerente.php" class="modal-close waves-effect btn-flat">Cancelar</a>
